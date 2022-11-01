@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Header xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Alta>true</Alta>
+  <CaseGenerationFailed xsi:nil="true" />
+  <ClinicalID>c00223786</ClinicalID>
+  <VIPPatientID>7765264</VIPPatientID>
+  <VIPOrderID>17516352</VIPOrderID>
+  <JDEOrderID>27128654</JDEOrderID>
+  <DID>969149</DID>
+  <TreatmentType>CLEAR_ALIGNER_GO</TreatmentType>
+  <DoctorRegion>EUROPE_DIRECT</DoctorRegion>
+  <DoctorCountry>SE</DoctorCountry>
+  <PartialTreatment xsi:nil="true" />
+  <OrderType>CLEAR_ALIGNER_GO</OrderType>
+  <TransactionID>59339112</TransactionID>
+  <DoctorsMarket>International</DoctorsMarket>
+  <DocumentType>SI</DocumentType>
+  <ApplianceMaterialType>ST30</ApplianceMaterialType>
+  <ItemNumber>8874</ItemNumber>
+  <MaxAllowedStages>0</MaxAllowedStages>
+  <PatientType>Adult</PatientType>
+  <Timestamp>2018-10-24T04:14:38.518-06:00</Timestamp>
+  <RxSubmissionMode>Online</RxSubmissionMode>
+  <PrescriptionType>Suggestive_PVS</PrescriptionType>
+  <MaxAllowedDifficultyMovement xsi:nil="true" />
+</Header>

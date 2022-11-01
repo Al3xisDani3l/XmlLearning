@@ -1,0 +1,22 @@
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.csproj.AssemblyReference.cache
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.GeneratedMSBuildEditorConfig.editorconfig
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.AssemblyInfoInputs.cache
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.AssemblyInfo.cs
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.csproj.CoreCompileInputs.cache
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.exe
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.deps.json
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.runtimeconfig.json
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.pdb
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\ExtendedXmlSerializer.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\LightInject.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\NReco.LambdaParser.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Sprache.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\System.Interactive.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.csproj.CopyComplete
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\refint\Serializacion level one.dll
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.pdb
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.genruntimeconfig.cache
+E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\ref\Serializacion level one.dll
