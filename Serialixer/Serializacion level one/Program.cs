@@ -29,23 +29,33 @@ string pathPreferences = @"C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning
 
 string pathAlignerTrimming = @"C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\AlignerTrimming.xml";
 
+string pathAttachments = @"C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\Attachments.xml";
+
 //string resultadoSerializacion = header.Serialize();
 
 //Console.WriteLine(resultadoSerializacion);
 
 
-AlignerTrimming test = new();
+Attachments test = new();
 
 test.Qid = "String";
 test.Source = AttributeSourceType.preference;
 test.IsApplicable = true;
-test.Value = AlignerTrimmingType.ToHalfwayBetweenGingivalMarginAndCEJLine;
+var t1 = new AttachmentsTypeTooth() { Id = 4 };
+t1.Attachment.Add(new AttachmentType() { Id = "1",Type = AttachType.OptimizedRotation, Location = AttachmentLocationType.CenterCenter, Surface = ToothSurfaceType.Buccal, Size = new AttachmentTypeSize() { Units = AttachmentTypeSizeUnits.mm, Value = "autosize" }, Status = AttachmentBoostStatusType.NotChanged });
+var t2 = new AttachmentsTypeTooth() { Id = 5 };
+t2.Attachment.Add(new AttachmentType() { Id = "2", Type = AttachType.OptimizedRotation, Location = AttachmentLocationType.CenterCenter, Surface = ToothSurfaceType.Buccal, Size = new AttachmentTypeSize() { Units = AttachmentTypeSizeUnits.mm, Value = "autosize" }, Status = AttachmentBoostStatusType.NotChanged });
+test.Tooth.Add(t1);
+test.Tooth.Add(t2);
 
-string dualString =   test.Serialize();
 
-var dualArch1 = AlignerTrimming.Deserialize(dualString);
 
-var resultado = AlignerTrimming.LoadFromFile(pathAlignerTrimming);
+
+//string dualString =   test.Serialize();
+
+//var dualArch1 = Attachments.Deserialize(dualString);
+
+var resultado = Attachments.LoadFromFile(pathAttachments);
 var preferences = Preference.LoadFromFile(pathPreferences);
 
 if (resultado != null) Console.WriteLine("Se ha deserializado");

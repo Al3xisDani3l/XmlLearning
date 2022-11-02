@@ -55,8 +55,6 @@ namespace Serialixer
                         .UseOptimizedNamespaces() //reduce el espacio de nombre y lo limita a su uso en la raiz
                         .EnableImplicitTyping(typeof(T)) //evita problemas con los espacios de nombres
                         .EnableXmlText() //permite el uso de value como propiedad interna en xml
-                        .WithEnumerableSupport()
-                        .EnableReferences()
                         .Create();
 
                 }
@@ -319,9 +317,11 @@ namespace Serialixer
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("Tooth", Namespace = "http://aligntech.com/Prescription/1.0", IsNullable = false)]
+    [XmlRootAttribute("Tooth", IsNullable = false)]
     public partial class ToothType : SerializableXML<ToothType>
     {
+        [XmlAttribute("id")]
+        public int Id { get; set; }
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
@@ -1832,27 +1832,19 @@ namespace Serialixer
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("AttachmentsTypeTooth")]
+    [XmlRootAttribute("Tooth")]
     public partial class AttachmentsTypeTooth : ToothType
     {
-        [XmlElement("Attachment")]
-        public List<AttachmentsTypeToothAttachment> Attachment { get; set; }
+        [XmlArray("Attachment")]
+        public List<AttachmentType> Attachment { get; set; }
 
         public AttachmentsTypeTooth()
         {
-            Attachment = new List<AttachmentsTypeToothAttachment>();
+            Attachment = new();
         }
     }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("AttachmentsTypeToothAttachment")]
-    public partial class AttachmentsTypeToothAttachment : AttachmentType
-    {
-    }
+    
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [Serializable]

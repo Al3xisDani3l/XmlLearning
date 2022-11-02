@@ -25,45 +25,46 @@ namespace Serializacion_level_one.TreatFiles
         public partial class Preference : SerializableXML<Preference>
         {
             [XmlElement(IsNullable = true, Order = 0)]
-            public ToothNumberingSystem ToothNumberingSystem { get; set; }
-            [XmlElement(IsNullable = true, Order = 1)]
-            public DualArchPreference DualArchPreference { get; set; }
-            [XmlElement(IsNullable = true, Order = 2)]
-            public Leveling Leveling { get; set; }
-            [XmlElement(IsNullable = true, Order = 3)]
-            public Attachments Attachments { get; set; }
-            [XmlElement(IsNullable = true, Order = 4)]
-            public PreferenceTypeIPROnFirstClinCheck IPROnFirstClinCheck { get; set; }
-            [XmlElement(IsNullable = true, Order = 5)]
-            public PreferenceTypeIPROnPermanentTeeth IPROnPermanentTeeth { get; set; }
-            [XmlElement(IsNullable = true, Order = 6)]
-            public PreferenceTypeIPROnPrimaryTeeth IPROnPrimaryTeeth { get; set; }
-            [XmlElement(IsNullable = true, Order = 7)]
-            public PreferenceTypeIPRStaging IPRStaging { get; set; }
-            [XmlElement(Order = 8)]
-            public PreferenceTypeToothStagingForArchExpansion ToothStagingForArchExpansion { get; set; }
-            [XmlElement(IsNullable = true, Order = 9)]
-            public PreferenceTypeDelayStageToStartIPR DelayStageToStartIPR { get; set; }
-            [XmlElement(IsNullable = true, Order = 10)]
-            public PreferenceTypeDelayAttachmentPlacement DelayAttachmentPlacement { get; set; }
-            [XmlElement(IsNullable = true, Order = 11)]
-            public PreferenceTypeDelayStageOfExtraction DelayStageOfExtraction { get; set; }
-            [XmlElement(IsNullable = true, Order = 12)]
-            public PreferenceTypePonticsForOpenSpaces PonticsForOpenSpaces { get; set; }
-            [XmlElement(IsNullable = true, Order = 13)]
-            public PreferenceTypePrecisionCutPreference PrecisionCutPreference { get; set; }
-            [XmlElement(Order = 14)]
-            public PreferenceTypeArchExpansion ArchExpansion { get; set; }
-            [XmlElement(IsNullable = true, Order = 15)]
-            public PreferenceTypeToothSizeDiscrepancy ToothSizeDiscrepancy { get; set; }
-            [XmlElement(IsNullable = true, Order = 16)]
-            public PreferenceTypePassiveAligners PassiveAligners { get; set; }
-            [XmlElement(IsNullable = true, Order = 17)]
-            public PreferenceTypePassiveAlignersPreference PassiveAlignersPreference { get; set; }
-            [XmlElement(IsNullable = true, Order = 18)]
-            public PreferenceTypeStageToRemoveAttachmentAtEnd StageToRemoveAttachmentAtEnd { get; set; }
-            [XmlElement(IsNullable = true, Order = 19)]
             public AlignerTrimming AlignerTrimming { get; set; }
+            [XmlElement(IsNullable = true, Order = 1 )]
+            public ToothNumberingSystem ToothNumberingSystem { get; set; }
+            [XmlElement(IsNullable = true,Order = 2)]
+            public DualArchPreference DualArchPreference { get; set; }
+            [XmlElement(IsNullable = true,Order = 3)]
+            public Leveling Leveling { get; set; }           
+            [XmlElement(IsNullable = true,Order = 4)]
+            public Attachments Attachments { get; set; }
+            [XmlElement(IsNullable = true,Order = 5)]
+            public PreferenceTypeIPROnFirstClinCheck IPROnFirstClinCheck { get; set; }
+            [XmlElement(IsNullable = true, Order = 6)]
+            public PreferenceTypeIPROnPermanentTeeth IPROnPermanentTeeth { get; set; }
+            [XmlElement(IsNullable = true, Order = 7)]
+            public PreferenceTypeIPROnPrimaryTeeth IPROnPrimaryTeeth { get; set; }
+            [XmlElement(IsNullable = true, Order = 8)]
+            public PreferenceTypeIPRStaging IPRStaging { get; set; }
+            [XmlElement(Order = 9)]
+            public PreferenceTypeToothStagingForArchExpansion ToothStagingForArchExpansion { get; set; }
+            [XmlElement(IsNullable = true,Order = 10)]
+            public PreferenceTypeDelayStageToStartIPR DelayStageToStartIPR { get; set; }
+            [XmlElement(IsNullable = true, Order = 11)]
+            public PreferenceTypeDelayAttachmentPlacement DelayAttachmentPlacement { get; set; }
+            [XmlElement(IsNullable = true, Order = 12)]
+            public PreferenceTypeDelayStageOfExtraction DelayStageOfExtraction { get; set; }
+            [XmlElement(IsNullable = true, Order = 13)]
+            public PreferenceTypePonticsForOpenSpaces PonticsForOpenSpaces { get; set; }
+            [XmlElement(IsNullable = true, Order = 14)]
+            public PreferenceTypePrecisionCutPreference PrecisionCutPreference { get; set; }
+            [XmlElement(Order = 15)]
+            public PreferenceTypeArchExpansion ArchExpansion { get; set; }
+            [XmlElement(IsNullable = true, Order = 16)]
+            public PreferenceTypeToothSizeDiscrepancy ToothSizeDiscrepancy { get; set; }
+            [XmlElement(IsNullable = true, Order = 17)]
+            public PreferenceTypePassiveAligners PassiveAligners { get; set; }
+            [XmlElement(IsNullable = true, Order = 18)]
+            public PreferenceTypePassiveAlignersPreference PassiveAlignersPreference { get; set; }
+            [XmlElement(IsNullable = true, Order = 19)]
+            public PreferenceTypeStageToRemoveAttachmentAtEnd StageToRemoveAttachmentAtEnd { get; set; }
+            
             [XmlElement(IsNullable = true, Order = 20)]
             public PreferenceTypeApplyVirtualCChainMethod ApplyVirtualCChainMethod { get; set; }
             [XmlElement(IsNullable = true, Order = 21)]
@@ -75,7 +76,7 @@ namespace Serializacion_level_one.TreatFiles
         }
 
 
-
+    
 
 
 
