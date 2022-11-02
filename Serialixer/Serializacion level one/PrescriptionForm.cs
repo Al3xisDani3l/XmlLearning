@@ -23,6 +23,7 @@ namespace Serialixer
     using ExtendedXmlSerializer;
     using ExtendedXmlSerializer.Configuration;
     using ExtendedXmlSerializer.ExtensionModel;
+    using Serializacion_level_one.TreatFiles;
 
 
     #region Base entity class
@@ -50,7 +51,14 @@ namespace Serialixer
             {
                 if ((_extendedXmlSerializer == null))
                 {
-                    _extendedXmlSerializer = new ConfigurationContainer().UseOptimizedNamespaces().EnableImplicitTyping(typeof(T)).Create();
+                    _extendedXmlSerializer = new ConfigurationContainer()
+                        .UseOptimizedNamespaces() //reduce el espacio de nombre y lo limita a su uso en la raiz
+                        .EnableImplicitTyping(typeof(T)) //evita problemas con los espacios de nombres
+                        .EnableXmlText() //permite el uso de value como propiedad interna en xml
+                        .WithEnumerableSupport()
+                        .EnableReferences()
+                        .Create();
+
                 }
                 return _extendedXmlSerializer;
             }
@@ -1817,22 +1825,7 @@ namespace Serialixer
         Stage4,
     }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("AttachmentsType")]
-    public partial class AttachmentsType : SerializableXML<AttachmentsType>
-    {
-        [XmlElement("Tooth")]
-        public List<AttachmentsTypeTooth> Tooth { get; set; }
-
-        public AttachmentsType()
-        {
-            Tooth = new List<AttachmentsTypeTooth>();
-        }
-    }
+    
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [Serializable]
@@ -1993,27 +1986,15 @@ namespace Serialixer
         OverallTreatment,
     }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("LevelingType")]
-    public partial class LevelingType : SerializableXML<LevelingType>
-    {
-        [XmlElement("GingivalMargins", typeof(LevelingTypeGingivalMargins))]
-        public LevelingTypeGingivalMargins GingivalMargins { get; set; }
-        [XmlElement("IncisalEdges", typeof(LevelingTypeIncisalEdges))]
-        public LevelingTypeIncisalEdges IncisalEdges { get; set; }
-    }
+   
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [Serializable]
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("LevelingTypeGingivalMargins")]
-    public partial class LevelingTypeGingivalMargins : SerializableXML<LevelingTypeGingivalMargins>
+    [XmlRootAttribute("GingivalMargins")]
+    public partial class GingivalMargins : SerializableXML<GingivalMargins>
     {
     }
 
@@ -2022,8 +2003,8 @@ namespace Serialixer
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("LevelingTypeIncisalEdges")]
-    public partial class LevelingTypeIncisalEdges : SerializableXML<LevelingTypeIncisalEdges>
+    [XmlRootAttribute("IncisalEdges")]
+    public partial class IncisalEdges : SerializableXML<IncisalEdges>
     {
         [XmlElement("LevelAmount")]
         public LevelingTypeIncisalEdgesLevelAmount LevelAmount { get; set; }
@@ -2040,75 +2021,15 @@ namespace Serialixer
         GingivalMargins,
     }
 
-    [XmlInclude(typeof(CommonFormQuestionsType))]
-    [XmlInclude(typeof(RententionFormQuestionsType))]
-    [XmlInclude(typeof(PrimaryFormQuestionsType))]
-    [XmlInclude(typeof(SecondaryFormQuestionsType))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("Preferences", Namespace = "http://aligntech.com/Prescription/1.0", IsNullable = false)]
-    public partial class Preference : SerializableXML<Preference>
-    {
-        [XmlElement(IsNullable = true, Order = 0)]
-        public PreferenceTypeToothNumberingSystem ToothNumberingSystem { get; set; }
-        [XmlElement(IsNullable = true, Order = 1)]
-        public PreferenceTypeDualArchPreference DualArchPreference { get; set; }
-        [XmlElement(IsNullable = true, Order = 2)]
-        public PreferenceTypeLeveling Leveling { get; set; }
-        [XmlElement(IsNullable = true, Order = 3)]
-        public PreferenceTypeAttachments Attachments { get; set; }
-        [XmlElement(IsNullable = true, Order = 4)]
-        public PreferenceTypeIPROnFirstClinCheck IPROnFirstClinCheck { get; set; }
-        [XmlElement(IsNullable = true, Order = 5)]
-        public PreferenceTypeIPROnPermanentTeeth IPROnPermanentTeeth { get; set; }
-        [XmlElement(IsNullable = true, Order = 6)]
-        public PreferenceTypeIPROnPrimaryTeeth IPROnPrimaryTeeth { get; set; }
-        [XmlElement(IsNullable = true, Order = 7)]
-        public PreferenceTypeIPRStaging IPRStaging { get; set; }
-        [XmlElement(Order = 8)]
-        public PreferenceTypeToothStagingForArchExpansion ToothStagingForArchExpansion { get; set; }
-        [XmlElement(IsNullable = true, Order = 9)]
-        public PreferenceTypeDelayStageToStartIPR DelayStageToStartIPR { get; set; }
-        [XmlElement(IsNullable = true, Order = 10)]
-        public PreferenceTypeDelayAttachmentPlacement DelayAttachmentPlacement { get; set; }
-        [XmlElement(IsNullable = true, Order = 11)]
-        public PreferenceTypeDelayStageOfExtraction DelayStageOfExtraction { get; set; }
-        [XmlElement(IsNullable = true, Order = 12)]
-        public PreferenceTypePonticsForOpenSpaces PonticsForOpenSpaces { get; set; }
-        [XmlElement(IsNullable = true, Order = 13)]
-        public PreferenceTypePrecisionCutPreference PrecisionCutPreference { get; set; }
-        [XmlElement(Order = 14)]
-        public PreferenceTypeArchExpansion ArchExpansion { get; set; }
-        [XmlElement(IsNullable = true, Order = 15)]
-        public PreferenceTypeToothSizeDiscrepancy ToothSizeDiscrepancy { get; set; }
-        [XmlElement(IsNullable = true, Order = 16)]
-        public PreferenceTypePassiveAligners PassiveAligners { get; set; }
-        [XmlElement(IsNullable = true, Order = 17)]
-        public PreferenceTypePassiveAlignersPreference PassiveAlignersPreference { get; set; }
-        [XmlElement(IsNullable = true, Order = 18)]
-        public PreferenceTypeStageToRemoveAttachmentAtEnd StageToRemoveAttachmentAtEnd { get; set; }
-        [XmlElement(IsNullable = true, Order = 19)]
-        public PreferenceTypeAlignerTrimming AlignerTrimming { get; set; }
-        [XmlElement(IsNullable = true, Order = 20)]
-        public PreferenceTypeApplyVirtualCChainMethod ApplyVirtualCChainMethod { get; set; }
-        [XmlElement(IsNullable = true, Order = 21)]
-        public OptimizedAttachmentVsPrecisionCutType OptimizedAttachmentVsPrecisionCut { get; set; }
-        [XmlElement(IsNullable = true, Order = 22)]
-        public PreferenceTypeOptimizedAttachmentSizePreference OptimizedAttachmentSizePreference { get; set; }
-        [XmlElement(IsNullable = true, Order = 23)]
-        public PreferenceTypeTerminalMolarDistortion TerminalMolarDistortion { get; set; }
-    }
+   
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [Serializable]
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("PreferenceTypeToothNumberingSystem")]
-    public partial class PreferenceTypeToothNumberingSystem : SerializableXML<PreferenceTypeToothNumberingSystem>
+    //[XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
+    [XmlRootAttribute("ToothNumberingSystem")]
+    public partial class ToothNumberingSystem : SerializableXML<ToothNumberingSystem>
     {
         [XmlAttribute(AttributeName = "qid")]
         public string Qid { get; set; }
@@ -2136,8 +2057,8 @@ namespace Serialixer
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("PreferenceTypeDualArchPreference")]
-    public partial class PreferenceTypeDualArchPreference : SerializableXML<PreferenceTypeDualArchPreference>
+    [XmlRootAttribute("DualArchPreference")]
+    public class DualArchPreference : SerializableXML<DualArchPreference>
     {
         [XmlAttribute(AttributeName = "qid")]
         public string Qid { get; set; }
@@ -2145,7 +2066,7 @@ namespace Serialixer
         public AttributeSourceType Source { get; set; }
         [XmlAttribute(AttributeName = "isApplicable")]
         public bool IsApplicable { get; set; }
-        [XmlTextAttribute]
+        [XmlText]
         public DualArchPreferenceType Value { get; set; }
     }
 
@@ -2165,9 +2086,8 @@ namespace Serialixer
     [Serializable]
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("PreferenceTypeLeveling")]
-    public partial class PreferenceTypeLeveling : LevelingType
+    [XmlRootAttribute("Leveling")]
+    public partial class Leveling : SerializableXML<Leveling>
     {
         [XmlAttribute(AttributeName = "qid")]
         public string Qid { get; set; }
@@ -2175,6 +2095,11 @@ namespace Serialixer
         public AttributeSourceType Source { get; set; }
         [XmlAttribute(AttributeName = "isApplicable")]
         public bool IsApplicable { get; set; }
+
+        [XmlElement("GingivalMargins")]
+        public GingivalMargins GingivalMargins { get; set; }
+        [XmlElement("IncisalEdges")]
+        public IncisalEdges IncisalEdges { get; set; }
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
@@ -2182,15 +2107,23 @@ namespace Serialixer
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("PreferenceTypeAttachments")]
-    public partial class PreferenceTypeAttachments : AttachmentsType
+    [XmlRootAttribute("Attachments")]
+    public partial class Attachments : SerializableXML<Attachments> 
     {
+        public Attachments()
+        {
+            Tooth = new();
+        }
+
         [XmlAttribute(AttributeName = "qid")]
         public string Qid { get; set; }
         [XmlAttribute(AttributeName = "source")]
         public AttributeSourceType Source { get; set; }
         [XmlAttribute(AttributeName = "isApplicable")]
         public bool IsApplicable { get; set; }
+
+        [XmlElement("Tooth")]
+        public List<AttachmentsTypeTooth> Tooth { get; set; }
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
@@ -2556,8 +2489,8 @@ namespace Serialixer
     [DebuggerStepThrough]
     [DesignerCategoryAttribute("code")]
     [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    [XmlRootAttribute("PreferenceTypeAlignerTrimming")]
-    public partial class PreferenceTypeAlignerTrimming : SerializableXML<PreferenceTypeAlignerTrimming>
+    [XmlRootAttribute("AlignerTrimming")]
+    public  class AlignerTrimming : SerializableXML<AlignerTrimming>
     {
         [XmlAttribute(AttributeName = "qid")]
         public string Qid { get; set; }
@@ -2565,7 +2498,7 @@ namespace Serialixer
         public AttributeSourceType Source { get; set; }
         [XmlAttribute(AttributeName = "isApplicable")]
         public bool IsApplicable { get; set; }
-        [XmlTextAttribute]
+        [XmlText]
         public AlignerTrimmingType Value { get; set; }
     }
 
@@ -5019,39 +4952,7 @@ namespace Serialixer
         public string LowerEnd { get; set; }
     }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
-    [Serializable]
-    [DebuggerStepThrough]
-    [DesignerCategoryAttribute("code")]
-    [XmlTypeAttribute(AnonymousType = true, Namespace = "http://aligntech.com/Prescription/1.0")]
-    
-    public partial class PrescriptionFormData : SerializableXML<PrescriptionFormData>
-    {
-        [XmlArrayAttribute(IsNullable = true)]
-        [XmlArrayItemAttribute("PriorPrescriptions")]
-        public List<PrescriptionFormData> PriorPrescriptions { get; set; }
-
-        [XmlElement("Header")]
-        public Header Header { get; set; }
-        [XmlArrayItemAttribute("Study", IsNullable = false)]
-        public List<StudyType> ClinicalStudies { get; set; }
-        [XmlElement("PrescriptionQuestions")]
-        public PrescriptionFormTypePrescriptionQuestions PrescriptionQuestions { get; set; }
-        [XmlElement("Preferences")]
-        public Preference Preferences { get; set; }
-        [XmlAttribute(AttributeName = "schemaVersion")]
-        [DefaultValue("20.0")]
-        public string SchemaVersion { get; set; }
-
-       
-        public PrescriptionFormData()
-        {
-            PriorPrescriptions = new List<PrescriptionFormData>();
-
-            ClinicalStudies = new List<StudyType>();
-            SchemaVersion = "20.0";
-        }
-    }
+   
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
     [Serializable]

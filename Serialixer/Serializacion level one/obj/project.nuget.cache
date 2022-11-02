@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/89m2aUG7NY/N4+dXcQ64v0MhqfMcBMRi4T1ibTSaQamH3ca0tA4zkAz3aM4lfeoXMQQHZEOfgI+Fllpsul1aw==",
+  "dgSpecHash": "0EktgYzlBWdJu+2bVRi6OX8a5sMUpF0dGLKjkqiYcPL95qU+UGewKcolXTWW4WSgFDAW87MP5QwVuX4m7ApwDQ==",
   "success": true,
-  "projectFilePath": "E:\\repos\\XmlLearning\\Serialixer\\Serializacion level one\\Serializacion level one.csproj",
+  "projectFilePath": "C:\\Users\\alexi\\OneDrive\\Documentos\\GitHub\\XmlLearning\\Serialixer\\Serializacion level one\\Serializacion level one.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexi\\.nuget\\packages\\extendedxmlserializer\\3.7.6\\extendedxmlserializer.3.7.6.nupkg.sha512",
     "C:\\Users\\alexi\\.nuget\\packages\\lightinject\\6.3.5\\lightinject.6.3.5.nupkg.sha512",

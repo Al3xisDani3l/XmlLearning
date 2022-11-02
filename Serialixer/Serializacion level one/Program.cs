@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Serialixer;
+using Serializacion_level_one.TreatFiles;
 
 Header header = new();
 header.ClinicalID = "c00223786";
@@ -24,14 +25,28 @@ header.Alta = true;
 
 string pathHeaderXml = @"E:\repos\FAST\src\FunctionalitiesTests\xml samples\7996965CD.xml";
 
+string pathPreferences = @"C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\Preferences.xml";
 
-
+string pathAlignerTrimming = @"C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\AlignerTrimming.xml";
 
 //string resultadoSerializacion = header.Serialize();
 
 //Console.WriteLine(resultadoSerializacion);
 
-var resultado = PrescriptionFormData.LoadFromFile(pathHeaderXml);
+
+AlignerTrimming test = new();
+
+test.Qid = "String";
+test.Source = AttributeSourceType.preference;
+test.IsApplicable = true;
+test.Value = AlignerTrimmingType.ToHalfwayBetweenGingivalMarginAndCEJLine;
+
+string dualString =   test.Serialize();
+
+var dualArch1 = AlignerTrimming.Deserialize(dualString);
+
+var resultado = AlignerTrimming.LoadFromFile(pathAlignerTrimming);
+var preferences = Preference.LoadFromFile(pathPreferences);
 
 if (resultado != null) Console.WriteLine("Se ha deserializado");
 

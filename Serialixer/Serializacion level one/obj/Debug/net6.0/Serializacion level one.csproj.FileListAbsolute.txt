@@ -20,3 +20,25 @@ E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\refint\
 E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.pdb
 E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.genruntimeconfig.cache
 E:\repos\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\ref\Serializacion level one.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.exe
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.deps.json
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.runtimeconfig.json
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Serializacion level one.pdb
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\ExtendedXmlSerializer.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\LightInject.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\NReco.LambdaParser.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\Sprache.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\bin\Debug\net6.0\System.Interactive.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.csproj.AssemblyReference.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.AssemblyInfoInputs.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.AssemblyInfo.cs
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.csproj.CoreCompileInputs.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.csproj.CopyComplete
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\refint\Serializacion level one.dll
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.pdb
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\Serializacion level one.genruntimeconfig.cache
+C:\Users\alexi\OneDrive\Documentos\GitHub\XmlLearning\Serialixer\Serializacion level one\obj\Debug\net6.0\ref\Serializacion level one.dll
